@@ -47,6 +47,10 @@ select:focus{
     padding:0;
 }
 
+.product-img{
+    height:450px;
+}
+
 .single-product .col-2{
     padding: 20px;
 }
@@ -103,6 +107,7 @@ select:focus{
 
 .cart-page{
     margin: 80px auto;
+    padding:100px;
 }
 
 table{
