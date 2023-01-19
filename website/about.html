@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart</title>
+    <title>About</title>
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="product.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="about.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet"
@@ -22,62 +21,7 @@
     <div class="container">
         <div id="navbar-placeholder"></div>
     </div>
-
-    <!-- cart-details -->
-    <div class="small-container cart-page">
-        <table>
-            <tr>
-                <th>Product</th>
-                <th>Quantity</th>
-                <th>Sub-Total</th>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="../images/beauty.jpg" alt="logo">
-                        <div>
-                            <p>Cute Girl</p>
-                            <small>Price : $45.00</small><br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1" min="1"></td>
-                <td>Price</td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="cart-info">
-                        <img src="../images/cutegirl2.png" alt="logo">
-                        <div>
-                            <p>Cute Girl</p>
-                            <small>Price : $45.00</small><br>
-                            <a href="">Remove</a>
-                        </div>
-                    </div>
-                </td>
-                <td><input type="number" value="1" min="1"></td>
-                <td>Price</td>
-            </tr>
-        </table>
-
-        <div class="total-price">
-            <table>
-                <tr>
-                    <td>Sub-Total</td>
-                    <td>Some Price</td>
-                </tr>
-                <tr>
-                    <td>Delivery Charge</td>
-                    <td>Some Price</td>
-                </tr>
-                <tr>
-                    <td>Total</td>
-                    <td>Some Price</td>
-                </tr>
-            </table>
-        </div>
-    </div>
+    <div id="container"></div>
 
     <!-- footer -->
 
@@ -117,6 +61,8 @@
         <hr>
         <p class="copyright">Copyright 2022</p>
     </div>
+
+    <script type="module" src="about.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script>
         $.get("navbar.html", function (data) {

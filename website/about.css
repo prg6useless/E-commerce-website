@@ -1,0 +1,16 @@
+#container{
+    margin:150px;
+    padding:20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.col-4{
+    flex-basis: 25% !important;
+}
+.col-4 img{
+    width:150px !important;
+    height:150px!important;
+}
