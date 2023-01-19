@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products Details</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="../images/logo.png" alt="logo" width="50px" height="50px" style="color:white;">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="homepage.html">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">Account</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="cart.html"><i class="fa fa-shopping-basket" style="font-size: 20px;"></i></a></li>
+                </ul>
+            </nav>
+            <!-- <img src="../images/cart.png" width="30px" height="30px"> -->
+            <img src="../images/bars-solid.svg" class="menu-icon" onclick="menutoggle()">
+            <!-- <i class="fa fa-shopping-basket" style="font-size: 20px;" class="menu icon"></i> -->
+        </div>
+    </div>
+
+    <!-- single proucts details -->
+
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="../images/cutegirl.png" width="100%" id="product-img">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="../images/cutegirl.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../images/cutegirl2.png" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../images/beauty.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="../images/cutegirl.png" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / Cute Girl</p>
+                <h1>Cute Girl for Rent</h1>
+                <h4>$45.00</h4>
+                <select>
+                    <option>Select date</option>
+                    <option>Today</option>
+                    <option>Tomorrow</option>
+                </select>
+                <input type="number" value="1" min="1">
+                <a href="" class="btn" onclick="opencart()">Add to Cart</a>
+                <h3>Product Details <i class="fa fa-indent"></i></h3><br>
+                <p>You can rent cute girl for a day to satisy your lonely heart</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- title -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+            <p>View More</p>
+        </div>
+    </div>
+
+    <!-- products -->
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4"><img src="../images/beauty.jpg" alt="img1">
+                <h4>Cute Girl</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$45.00</p>
+            </div>
+            <div class="col-4"><img src="../images/shrek.jpg" alt="img1">
+                <h4>Smith-kun</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$105.00</p>
+            </div>
+            <div class="col-4"><img src="../images/dog.jpg" alt="img1">
+                <h4>Doge</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>$1.00</p>
+            </div>
+            <div class="col-4"><img src="../images/mike.jpg" alt="img1">
+                <h4>Mike-sama</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>$800.00</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our app</h3>
+                    <p>Download App on ios and android</p>
+                    <div class="app-logo">
+                        <img src="../images/app-store.png" alt="">
+                        <img src="../images/play-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="../images/bleach.png" width="100px" height="100px">
+                    <p>Our goal is to always satisfy our customers</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Coupons</li>
+                        <li>Coupons</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022</p>
+    </div>
+
+    <script>
+        let MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "250px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+        let productImg = document.getElementById("product-img");
+        let smallImg = document.getElementsByClassName("small-img");
+
+        for (let i = 0; i < 4; i++) {
+            smallImg[i].onclick = function () {
+                productImg.src = smallImg[i].src;
+            }
+        }
+
+        let openCart = document.getElementsByClassName("btn");
+        function opencart() {
+            window.open("cart.html", "_blank");
+        }
+
+    </script>
+</body>
+
+</html>

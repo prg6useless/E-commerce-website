@@ -1,0 +1,179 @@
+/*all products*/
+.row-2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+
+select{
+    border: 1px solid rgb(98, 164, 0);
+    padding: 5px;
+}
+
+select:focus{
+    outline:none;
+}
+
+.row-items:hover{
+    cursor: pointer;
+}
+
+.page-btn{
+    margin:0 auto 80px;
+}
+
+.page-btn span{
+    display: inline-block;
+    border: 1px solid purple;
+    margin-left: 10px;
+    width:40px;
+    height:40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.page-btn span:hover{
+    background-color: purple;
+    color:white;
+}
+
+/*for product details*/
+
+.single-product{
+    margin-top:80px;
+}
+
+.single-product .col-2 img{
+    padding:0;
+}
+
+.single-product .col-2{
+    padding: 20px;
+}
+
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.single-product select{
+    display:block;
+    padding:10px;
+    margin-top: 20px;
+}
+
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding: 10px;
+    font-size: 20px;
+    margin-right:10px;
+    border:1px solid purple;
+}
+
+.single-product input:focus{
+    outline:none;
+}
+
+.single-product .fa{
+    margin-left:10px;
+}
+
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small-img-col{
+    flex-basis: 25%;
+    cursor:pointer;
+}
+
+.single-product .select-opt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/*for cart details*/
+
+.cart-page{
+    margin: 80px auto;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th{
+    text-align: left;
+    padding:5px;
+    color:purple;
+    background-color: rgb(162, 162, 155);
+    font-weight: normal;
+}
+
+td{
+    padding:10px 5px;
+}
+
+td input{
+    width:40px;
+    height: 30px;
+    padding:5px;
+}
+
+td a{
+    color:purple;
+}
+
+td img{
+    width:80px;
+    height:80px;
+    margin-right: 10px;
+}
+
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table{
+    border-top: 3px solid purple;
+    width:100%;
+    max-width:420px;
+}
+
+td:last-child,th:last-child{
+    text-align: right;
+}
+
+
+
+@media only screen and (max-width:600px){
+    .single-product .row{
+        text-align: left;
+    }
+
+    .single-product .col-2{
+        padding:20px 0;
+    }
+
+    .single-product h1{
+        font-size: 29px;
+        line-height: 30px;
+    }
+    .cart-info p{
+        display:none;
+    }
+}
