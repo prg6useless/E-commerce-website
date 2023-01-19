@@ -1,3 +1,2 @@
 #ignore all text files
-*.txt
-!thingstoadd.txt
+.txt
