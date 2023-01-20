@@ -1,0 +1,10 @@
+{
+    "name" :["Local Man","Grandma","Saul Goodman","Cute Girl",
+            "Pepper Spray","Black Glasses","Doge","Walter White"],
+    "img":["../images/face.jpg","../images/grandma.jpg","../images/saul.jpg",
+           "../images/beauty.jpg","../images/pepperspray.jpg","../images/glasses.jpg",
+           "../images/dog.jpg","../images/walterwhite.jpg"],
+    "price":["$500.00","$105.00","$999.90","$45.00","$15.00","$800.00","$1.00","$1999.99"],
+    "class":["fa fa-star-half-o","fa fa-star-o","fa fa-star-half-o","fa fa-star-half-o",
+             "fa fa-star-half-o","fa fa-star","fa fa-star-half-o","fa fa-star"]
+}
