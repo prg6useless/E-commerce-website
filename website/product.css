@@ -110,9 +110,13 @@ select:focus{
     padding:100px;
 }
 
-table{
+.cart-header{
     width: 100%;
     border-collapse: collapse;
+}
+
+.cart-table{
+    width: 100%;
 }
 
 .cart-info{
@@ -120,7 +124,7 @@ table{
     flex-wrap: wrap;
 }
 
-th{
+.cart-header th{
     text-align: left;
     padding:5px;
     color:purple;
@@ -128,7 +132,7 @@ th{
     font-weight: normal;
 }
 
-td{
+.cart-header td{
     padding:10px 5px;
 }
 
@@ -138,11 +142,11 @@ td input{
     padding:5px;
 }
 
-td a{
+.cart-table td a{
     color:purple;
 }
 
-td img{
+.cart-table td img{
     width:80px;
     height:80px;
     margin-right: 10px;
@@ -159,8 +163,12 @@ td img{
     max-width:420px;
 }
 
-td:last-child,th:last-child{
-    text-align: right;
+td:first-child,th:first-child{
+    width: 320px;
+}
+
+td:nth-child(2),th:nth-child(2),td:nth-child(3),th:nth-child(3){
+    width:340px;
 }
 
 
