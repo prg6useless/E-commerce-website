@@ -16,5 +16,7 @@
 
     "class2":["fa fa-star-o","fa fa-star-o","fa fa-star","fa fa-star-o",
              "fa fa-star-o","fa fa-star","fa fa-star-o","fa fa-star-o",
-            "fa fa-star-half-o","fa fa-star"]
+            "fa fa-star-half-o","fa fa-star"],
+
+    "htmlfile" : "product-details.html"
 }

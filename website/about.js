@@ -1,4 +1,4 @@
-import data from "../data/data.json" assert { type: "json" };
+import data from "../data/about.json" assert { type: "json" };
 
 let container = document.getElementById("container");
 let htmlElements = "";

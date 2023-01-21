@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Account</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="navbar-placeholder"></div>
+    </div>
+
+    <!-- account-details -->
+    <div class="main-container">
+        <div class="account-container">
+            <div class="acc-titles">
+                <a class="acc-details" href="#">
+                    <h3>Personal Information</h3>
+                </a>
+                <a class="acc-details" href="#">
+                    <h3>Account Information</h3>
+                </a>
+                <a class="acc-details" href="#">
+                    <h3>Edit Account</h3>
+                </a>
+                <a class="acc-details" href="#">
+                    <h3 class="dele">Delete Account</h3>
+                </a>
+            </div>
+            <div class="v1"></div>
+            <div class="details">
+                <div class="pi-details">
+                    <p><strong>Name : </strong></p>
+                    <p><strong>Email : </strong></p>
+                    <p><strong>Password :</strong><br>******</p>
+                    <p><strong>Phone No. : </strong></p>
+                </div>
+                <div class="ai-details">
+                    <p><strong>Delivery Address : </strong></p>
+                    <p><strong>Payment Cards : </strong></p>
+                    <p><strong>Purchases : </strong></p>
+                </div>
+                <div class="ea-details">
+                    <p><strong>Change Name : </strong></p>
+                    <p><strong>Change Email : </strong></p>
+                    <p><strong>Change Password :</strong><br>******</p>
+                    <p><strong>Change Phone No. : </strong></p>
+                    <a href="#" class="change-btn">Change</a>
+                </div>
+                <div class="da-details">
+                    <p style="text-align:center"><strong>Deleting an account</strong></p>
+                    <p style="padding:20px">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        <br>
+                        Tenetur, saepe dicta est ducimus ipsum nam quos impedit <br>
+                        laboriosam animi cupiditate, accusantium corporis aliquid <br>
+                        quasi? Harum corrupti repellendus ratione aut veniam?
+                    </p>
+                    <a href="#" class="change-btn">Delete Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <a>Download our app</a>
+                    <p>Download App on ios and android</p>
+                    <div class="app-logo">
+                        <img src="../images/app-store.png" alt="">
+                        <img src="../images/play-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="../images/bleach.png" width="100px" height="100px">
+                    <p>Our goal is to always satisfy our customers</p>
+                </div>
+                <div class="footer-col-3">
+                    <a>Useful Links</a>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Coupons</li>
+                        <li>Coupons</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <a>Follow Us</a>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2022</p>
+    </div>
+    <script type="module" src="account.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script>
+        $.get("navbar.html", function (data) {
+            $("#navbar-placeholder").replaceWith(data);
+        });
+    </script>
+</body>
+
+</html>

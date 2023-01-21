@@ -1,5 +1,4 @@
 import cartdata from "../data/cart.json" assert { type: "json" };
-import carttotaldata from "../data/totalprice.json" assert { type: "json" };
 
 // console.log(cartdata);
 
@@ -14,15 +13,15 @@ let totaltable = document.getElementsByClassName("total-table");
 let htmlElements = "";
 let htmlElements2 = "";
 
-for (let i = 0; i < cartdata.name.length; i++) {
+for (let i = 0; i < cartdata[0].name.length; i++) {
   htmlElements += `<tr>
   <td>
     <div class="cart-info">
-        <img src=${cartdata.img[i]} alt="logo">
+        <img src=${cartdata[0].img[i]} alt="logo">
         <div>
-            <p>${cartdata.name[i]}</p>
-            <small>$${cartdata.price[i]}</small><br>
-            <a href="">${cartdata.link}</a>
+            <p>${cartdata[0].name[i]}</p>
+            <small>$${cartdata[0].price[i]}</small><br>
+            <a href="">${cartdata[0].link}</a>
         </div>
     </div>
     </td>
@@ -31,15 +30,15 @@ for (let i = 0; i < cartdata.name.length; i++) {
     <button class="btn-click">Ok</button>
     </td>
     <td class="q-value">1</td>
-    <td class="sub-total">$${cartdata.price[i]}</td></tr>
+    <td class="sub-total">$${cartdata[0].price[i]}</td></tr>
 `;
 }
 
 tablerowitem[0].innerHTML = htmlElements;
 let subtotal = 0;
 
-for (let k = 0; k < cartdata.name.length; k++) {
-  subtotal += parseFloat(cartdata.price[k]);
+for (let k = 0; k < cartdata[0].name.length; k++) {
+  subtotal += parseFloat(cartdata[0].price[k]);
 }
 
 let btnclk = document.getElementsByClassName("btn-click");
@@ -49,7 +48,7 @@ let num = document.querySelectorAll(".order-value");
 
 let val;
 
-for (let k = 0; k < cartdata.name.length; k++) {
+for (let k = 0; k < cartdata[0].name.length; k++) {
   val = parseFloat(num[k].value);
   num[k].addEventListener("input", function () {
     val = parseFloat(num[k].value);
@@ -70,9 +69,9 @@ let subtotalValue = document.getElementsByClassName("sub-total");
 
 let totalValue = document.getElementsByClassName("price");
 
-for (let i = 0; i < carttotaldata.title.length; i++) {
+for (let i = 0; i < cartdata[1].title.length; i++) {
   htmlElements2 += `<tr>
-  <td>${carttotaldata.title[i]}</td>
+  <td>${cartdata[1].title[i]}</td>
   <td class="price">$${subtotal}</td>
 </tr>
   `;
@@ -84,19 +83,19 @@ totalValue[1].innerHTML = "$" + (0.02 * subtotal).toFixed(2);
 totalValue[2].innerHTML = "$" + (subtotal + 0.02 * subtotal).toFixed(2);
 
 let tot = 0;
-for (let j = 0; j < cartdata.name.length; j++) {
+for (let j = 0; j < cartdata[0].name.length; j++) {
   btnclk[j].onclick = () => {
     qValue[j].innerHTML = val;
     //to calcutate total
 
-    tot = tot + parseFloat(cartdata.price[j]).toFixed(2) * (val - 1);
+    tot = tot + parseFloat(cartdata[0].price[j]).toFixed(2) * (val - 1);
 
     subtotalValue[j].innerHTML =
-      "$" + parseFloat(cartdata.price[j]).toFixed(2) * val;
+      "$" + parseFloat(cartdata[0].price[j]).toFixed(2) * val;
     totalValue[0].innerHTML = "$" + (subtotal + tot).toFixed(2);
     totalValue[1].innerHTML = "$" + (0.02 * (subtotal + tot)).toFixed(2);
     totalValue[2].innerHTML =
       "$" + (subtotal + tot + 0.02 * (subtotal + tot)).toFixed(2);
   };
 }
-//   totalValue[0].innerHTML = parseFloat(cartdata.price[i]) * val;
+//   totalValue[0].innerHTML = parseFloat(cartdata[0].price[i]) * val;

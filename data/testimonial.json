@@ -1,6 +1,0 @@
-{
-    "name" :["Grandma","Walter White","Saul Goodman"],
-    "img":["../images/grandma.jpg","../images/saul.jpg","../images/walterwhite.jpg"],
-    "price":["$45.00","$105.00","$1.00","$800.00"],
-    "class" :["fa fa-star-half-o","fa fa-star-o","fa fa-star"]
-}

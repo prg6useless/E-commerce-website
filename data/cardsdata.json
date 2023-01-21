@@ -1,3 +1,8 @@
+[{
+    "name" :["Cute Girl","Smith-Kun","Doge","Mike-sama"],
+    "img":["../images/beauty.jpg","../images/shrek.jpg","../images/dog.jpg","../images/mike.jpg"],
+    "price":["$45.00","$105.00","$1.00","$800.00"]
+},
 {
     "name" :["Local Man","Grandma","Saul Goodman","Cute Girl",
             "Pepper Spray","Black Glasses","Doge","Walter White"],
@@ -7,4 +12,15 @@
     "price":["$500.00","$105.00","$999.90","$45.00","$15.00","$800.00","$1.00","$1999.99"],
     "class":["fa fa-star-half-o","fa fa-star-o","fa fa-star-half-o","fa fa-star-half-o",
              "fa fa-star-half-o","fa fa-star","fa fa-star-half-o","fa fa-star"]
+},
+{
+    "name" :["Grandma","Walter White","Saul Goodman"],
+    "img":["../images/grandma.jpg","../images/saul.jpg","../images/walterwhite.jpg"],
+    "price":["$45.00","$105.00","$1.00","$800.00"],
+    "class" :["fa fa-star-half-o","fa fa-star-o","fa fa-star"]
+},
+{
+    "img" : ["../images/adidas.png","../images/amazon.png","../images/bleach.png",
+    "../images/dell.png","../images/puma.png"]
 }
+]
