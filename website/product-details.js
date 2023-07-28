@@ -9,4 +9,5 @@ for (let i = 0; i < 4; i++) {
 
 function opencart() {
   window.open("cart.html", "_self");
+  console.log("cart");
 }

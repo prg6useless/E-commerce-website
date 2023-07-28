@@ -8,6 +8,7 @@
     <title>Products Details</title>
     <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="product-details.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -25,28 +26,28 @@
 
     <!-- single proucts details -->
 
-    <div class="small-container single-product">
-        <div class="row">
+    <div class="small-container single-product product-details-div">
+        <div class="row" >
             <div class="col-2">
-                <img src="../images/cutegirl.png" width="100%" id="product-img" class="product-img">
+                <img src="../images/Black-Nike_Shoes.png" width="100%" id="product-img" class="product-img">
                 <div class="small-img-row">
                     <div class="small-img-col">
-                        <img src="../images/cutegirl.png" width="100%" class="small-img">
+                        <img src="../images/Black-Nike_Shoes.png" width="100%" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="../images/cutegirl2.png" width="100%" class="small-img">
+                        <img src="../images/Black-Nike_Shoes Flipped.png" width="100%" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="../images/beauty.jpg" width="100%" class="small-img">
+                        <img src="#" width="100%" class="small-img">
                     </div>
                     <div class="small-img-col">
-                        <img src="../images/cutegirl.png" width="100%" class="small-img">
+                        <img src="#" width="100%" class="small-img">
                     </div>
                 </div>
             </div>
             <div class="col-2">
-                <p>Home / Cute Girl</p>
-                <h1>Cute Girl for Rent</h1>
+                <p>Shoes</p>
+                <h1>Nike Special Edition Shoes</h1>
                 <h4>$45.00</h4>
                 <select>
                     <option>Select date</option>
@@ -56,7 +57,7 @@
                 <input type="number" value="1" min="1">
                 <a href="" class="btn" onclick="opencart()">Add to Cart</a>
                 <h3>Product Details <i class="fa fa-indent"></i></h3><br>
-                <p>You can rent cute girl for a day to satisy your lonely heart</p>
+                <p>#</p>
             </div>
         </div>
     </div>
@@ -72,7 +73,7 @@
     <!-- products -->
     <div class="small-container">
         <div class="row">
-            <div class="col-4"><img src="../images/beauty.jpg" alt="img1">
+            <div class="col-4"><img src="../images/Women_Sneakers.png" alt="img1">
                 <h4>Cute Girl</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -83,7 +84,7 @@
                 </div>
                 <p>$45.00</p>
             </div>
-            <div class="col-4"><img src="../images/shrek.jpg" alt="img1">
+            <div class="col-4"><img src="../images/Women_Sneakers.png" alt="img1">
                 <h4>Smith-kun</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -94,7 +95,7 @@
                 </div>
                 <p>$105.00</p>
             </div>
-            <div class="col-4"><img src="../images/dog.jpg" alt="img1">
+            <div class="col-4"><img src="../images/Women_Sneakers.png" alt="img1">
                 <h4>Doge</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -105,7 +106,7 @@
                 </div>
                 <p>$1.00</p>
             </div>
-            <div class="col-4"><img src="../images/mike.jpg" alt="img1">
+            <div class="col-4"><img src="../images/Women_Sneakers.png" alt="img1">
                 <h4>Mike-sama</h4>
                 <div class="rating">
                     <i class="fa fa-star"></i>
@@ -121,42 +122,7 @@
     </div>
     <!-- footer -->
 
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download our app</h3>
-                    <p>Download App on ios and android</p>
-                    <div class="app-logo">
-                        <img src="../images/app-store.png" alt="">
-                        <img src="../images/play-store.png" alt="">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="../images/bleach.png" width="100px" height="100px">
-                    <p>Our goal is to always satisfy our customers</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Coupons</li>
-                        <li>Coupons</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>Twitter</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <p class="copyright">Copyright 2022</p>
-    </div>
+    <div id="footer-placeholder"></div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
@@ -164,6 +130,10 @@
     <script>
         $.get("navbar.html", function (data) {
             $("#navbar-placeholder").replaceWith(data);
+        });
+
+        $.get("footer.html", function (data) {
+            $("#footer-placeholder").replaceWith(data);
         });
     </script>
 </body>

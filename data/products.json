@@ -1,14 +1,19 @@
 {
-    "name" :["Cute Girl","Smith-kun","Doge","Mike-sama","Local Man","Grandma",
-             "Saul Goodman","Pepper Spray","Black Glasses","Walter White"],
+        "name" :["Black T-shirt","White T-shirt","Grey T-shirt","Checkered Shirt",
+            "Winter Jacket Coat","Black Hoodie","White Shirt","Black Pajama",
+            "Nike Special Edition Shoes","Womens's 361 Sneakers","80's Sumby Art T-shirt",
+            "Winter Overcoat Jacket"], 
 
-    "img":["../images/beauty.jpg","../images/shrek.jpg","../images/dog.jpg",
-           "../images/mike.jpg","../images/face.jpg","../images/grandma.jpg","../images/saul.jpg",
-           "../images/pepperspray.jpg","../images/glasses.jpg",
-           "../images/walterwhite.jpg"],
+            "img":["../images/black_Tshirt.png","../images/white_Tshirt.png",
+            "../images/silver_Tshirt.png",
+            "../images/blue-brown_checkered-shirt.png","../images/Winter_Jacket_Coat.png",
+            "../images/Black_Hoodie.png",
+            "../images/White_Shirt.png","../images/Black_Pajama.png",
+            "../images/Black-Nike_Shoes.png","../images/Women_Sneakers.png",
+            "../images/Gumby-art_Tshirt.png","../images/Green_Overcoat.png"],
 
     "price":["$45.00","$105.00","$1.00","$500.00","$500.00","$105.00","$999.90",
-             "$45.00","$15.00","$1999.99"],
+             "$45.00","$15.00","$1999.99","$1999.99","$1999.99"],
 
     "class1":["fa fa-star-o","fa fa-star-o","fa fa-star","fa fa-star",
              "fa fa-star-half-o","fa fa-star","fa fa-star-half-o","fa fa-star-half-o",

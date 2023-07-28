@@ -14,13 +14,17 @@
     <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+        integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
 </head>
 
 <body>
     <div class="header">
         <div class="container">
             <div id="navbar-placeholder"></div>
-            <div class="row">
+            <div class="row" id="Tag">
                 <div class="col-2">
                     <h1>Explore the best<br>clothes of your liking!</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure doloremque facilis<br> minus
@@ -31,7 +35,7 @@
                     <a href="" class="btn">Shop Now &#9755</a>
                 </div>
                 <div class="col-2">
-                    <img src="../images/cutegirl2.png" alt="image">
+                    <img src="../images/Woman.png" alt="image" style="height: 400px; width:350px;">
                 </div>
             </div>
         </div>
@@ -40,9 +44,9 @@
     <div class="categories">
         <div class="small-container">
             <div class="row">
-                <div class="col-3"><img src="../images/shrek.jpg" alt="img1"></div>
-                <div class="col-3"><img src="../images/dog.jpg" alt="img1"></div>
-                <div class="col-3"><img src="../images/beauty.jpg" alt="img1"></div>
+                <div class="col-3"><img src="../images/black-leather_jacket.png" alt="img1"></div>
+                <div class="col-3"><img src="../images/blue_Tshirt.png" alt="img1"></div>
+                <div class="col-3"><img src="../images/silver_Tshirt.png" alt="img1"></div>
             </div>
         </div>
     </div>
@@ -50,13 +54,13 @@
     <!-- Products -->
     <div class="small-container">
         <!-- featured products -->
-        <h2 class="title">Featured Products</h2>
+        <h2 class="title">Popular Products</h2>
         <div class="row">
             <!-- code injected from homepage.js -->
         </div>
-        <!-- latest products -->
-        <h2 class="title">Latest Products</h2>
-        <div class="row">
+        <!-- latest arrivals -->
+        <h2 class="title">Latest Arrivals</h2>
+        <div class="row lat-row">
             <!-- code injected from homepage.js -->
         </div>
     </div>
@@ -65,11 +69,11 @@
         <div class="small-container">
             <div class="row">
                 <div class="col-2">
-                    <img src="../images/satania.png" alt="" class="offer-img">
+                    <img src="../images/Thrasher_Hoodie.png" alt="hoodie" class="offer-img">
                 </div>
                 <div class="col-2">
                     <p>15% OFF</p>
-                    <h1>Satania</h1>
+                    <h1>Thrasher Hoodie</h1>
                     <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam a possimus in, omnis
                         quis
                         consectetur officia nesciunt provident repellat necessitatibus ipsam alias, illo, inventore
@@ -90,6 +94,7 @@
     </div>
 
     <!-- brands -->
+    <h2 class="title">Brand Partners</h2>
     <div class="brands">
         <div class="small-container">
             <div class="row">
@@ -98,51 +103,18 @@
         </div>
     </div>
 
-    <!-- footer -->
-
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download our app</h3>
-                    <p>Download App on ios and android</p>
-                    <div class="app-logo">
-                        <img src="../images/app-store.png" alt="">
-                        <img src="../images/play-store.png" alt="">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="../images/bleach.png" width="100px" height="100px">
-                    <p>Our goal is to always satisfy our customers</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Coupons</li>
-                        <li>Coupons</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>Twitter</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <p class="copyright">Copyright 2022</p>
-    </div>
+    <div id="footer-placeholder"></div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script>
         $.get("navbar.html", function (data) {
             $("#navbar-placeholder").replaceWith(data);
         });
+        $.get("footer.html", function (data) {
+            $("#footer-placeholder").replaceWith(data);
+        });
     </script>
     <script type="module" src="homepage.js"></script>
+    <script type="module" src="navbar.js"></script>
 </body>
 
 </html>

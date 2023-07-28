@@ -1,26 +1,30 @@
 [{
-    "name" :["Cute Girl","Smith-Kun","Doge","Mike-sama"],
-    "img":["../images/beauty.jpg","../images/shrek.jpg","../images/dog.jpg","../images/mike.jpg"],
+    "_comment" : "Popular Products",
+    "name" :["Nike Special Edition Shoes","Womens's 361 Sneakers","80's Sumby Art T-shirt","Winter Overcoat Jacket"],
+    "img":["../images/Black-Nike_Shoes.png","../images/Women_Sneakers.png","../images/Gumby-art_Tshirt.png","../images/Green_Overcoat.png"],
     "price":["$45.00","$105.00","$1.00","$800.00"]
 },
 {
-    "name" :["Local Man","Grandma","Saul Goodman","Cute Girl",
-            "Pepper Spray","Black Glasses","Doge","Walter White"],
-    "img":["../images/face.jpg","../images/grandma.jpg","../images/saul.jpg",
-           "../images/beauty.jpg","../images/pepperspray.jpg","../images/glasses.jpg",
-           "../images/dog.jpg","../images/walterwhite.jpg"],
+    "_comment" : "Latest Arrivals",
+    "name" :["Black T-shirt","White T-shirt","Grey T-shirt","Checkered Shirt",
+            "Winter Jacket Coat","Black Hoodie","White Shirt","Black Pajama"],
+    "img":["../images/black_Tshirt.png","../images/white_Tshirt.png","../images/silver_Tshirt.png",
+           "../images/blue-brown_checkered-shirt.png","../images/Winter_Jacket_Coat.png","../images/Black_Hoodie.png",
+           "../images/White_Shirt.png","../images/Black_Pajama.png"],
     "price":["$500.00","$105.00","$999.90","$45.00","$15.00","$800.00","$1.00","$1999.99"],
     "class":["fa fa-star-half-o","fa fa-star-o","fa fa-star-half-o","fa fa-star-half-o",
              "fa fa-star-half-o","fa fa-star","fa fa-star-half-o","fa fa-star"]
 },
 {
-    "name" :["Grandma","Walter White","Saul Goodman"],
-    "img":["../images/grandma.jpg","../images/saul.jpg","../images/walterwhite.jpg"],
+    "_comment" : "Ratings",
+    "name" :["Max Aarons","Bob Thompson","Gloria Miller"],
+    "img":["../images/Max.png","../images/Bob.png","../images/Gloria.png"],
     "price":["$45.00","$105.00","$1.00","$800.00"],
     "class" :["fa fa-star-half-o","fa fa-star-o","fa fa-star"]
 },
 {
-    "img" : ["../images/adidas.png","../images/amazon.png","../images/bleach.png",
-    "../images/dell.png","../images/puma.png"]
+    "_comment" : "Brand Images",
+    "img" : ["../images/adidas.png","../images/amazon.png","../images/levis.png",
+    "../images/northface.png","../images/puma.png"]
 }
 ]
