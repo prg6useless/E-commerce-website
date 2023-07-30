@@ -12,8 +12,8 @@
             "../images/Black-Nike_Shoes.png","../images/Women_Sneakers.png",
             "../images/Gumby-art_Tshirt.png","../images/Green_Overcoat.png"],
 
-    "price":["$45.00","$105.00","$1.00","$500.00","$500.00","$105.00","$999.90",
-             "$45.00","$15.00","$1999.99","$1999.99","$1999.99"],
+    "price":["45.00","105.00","1.00","500.00","500.00","105.00","999.90",
+             "45.00","15.00","1999.99","1999.99","1999.99"],
 
     "class1":["fa fa-star-o","fa fa-star-o","fa fa-star","fa fa-star",
              "fa fa-star-half-o","fa fa-star","fa fa-star-half-o","fa fa-star-half-o",

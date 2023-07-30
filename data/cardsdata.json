@@ -2,7 +2,7 @@
     "_comment" : "Popular Products",
     "name" :["Nike Special Edition Shoes","Womens's 361 Sneakers","80's Sumby Art T-shirt","Winter Overcoat Jacket"],
     "img":["../images/Black-Nike_Shoes.png","../images/Women_Sneakers.png","../images/Gumby-art_Tshirt.png","../images/Green_Overcoat.png"],
-    "price":["$45.00","$105.00","$1.00","$800.00"]
+    "price":["45.00","105.00","1.00","800.00"]
 },
 {
     "_comment" : "Latest Arrivals",
@@ -11,7 +11,7 @@
     "img":["../images/black_Tshirt.png","../images/white_Tshirt.png","../images/silver_Tshirt.png",
            "../images/blue-brown_checkered-shirt.png","../images/Winter_Jacket_Coat.png","../images/Black_Hoodie.png",
            "../images/White_Shirt.png","../images/Black_Pajama.png"],
-    "price":["$500.00","$105.00","$999.90","$45.00","$15.00","$800.00","$1.00","$1999.99"],
+    "price":["500.00","105.00","999.90","45.00","15.00","800.00","1.00","1999.99"],
     "class":["fa fa-star-half-o","fa fa-star-o","fa fa-star-half-o","fa fa-star-half-o",
              "fa fa-star-half-o","fa fa-star","fa fa-star-half-o","fa fa-star"]
 },
@@ -19,7 +19,7 @@
     "_comment" : "Ratings",
     "name" :["Max Aarons","Bob Thompson","Gloria Miller"],
     "img":["../images/Max.png","../images/Bob.png","../images/Gloria.png"],
-    "price":["$45.00","$105.00","$1.00","$800.00"],
+    "price":["45.00","105.00","1.00","800.00"],
     "class" :["fa fa-star-half-o","fa fa-star-o","fa fa-star"]
 },
 {

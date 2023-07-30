@@ -19,9 +19,7 @@
 
 <body>
 
-
-        <div id="navbar-placeholder"></div>
-
+    <div id="navbar-placeholder"></div>
 
     <!-- cart-details -->
     <div class="small-container cart-page">
@@ -30,6 +28,7 @@
                 <th>Product</th>
                 <th>Select Quantity</th>
                 <th>Quantity</th>
+                <th>Price</th>
                 <th>Sub-Total</th>
             </tr>
         </table>
@@ -38,54 +37,25 @@
         </table>
 
         <div class="total-price">
-            <table class="total-table">
+            <table class="total-table" id="grandTotalTable">
             </table>
         </div>
     </div>
 
     <!-- footer -->
 
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Download our app</h3>
-                    <p>Download App on ios and android</p>
-                    <div class="app-logo">
-                        <img src="../images/app-store.png" alt="">
-                        <img src="../images/play-store.png" alt="">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="../images/bleach.png" width="100px" height="100px">
-                    <p>Our goal is to always satisfy our customers</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Useful Links</h3>
-                    <ul>
-                        <li>Coupons</li>
-                        <li>Coupons</li>
-                        <li>Coupons</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow Us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>Twitter</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <p class="copyright">Copyright 2022</p>
-    </div>
+    <div id="footer-placeholder"></div>
+
+
     <script type="module" src="cart.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script>
         $.get("navbar.html", function (data) {
             $("#navbar-placeholder").replaceWith(data);
+        });
+
+        $.get("footer.html", function (data) {
+            $("#footer-placeholder").replaceWith(data);
         });
     </script>
 </body>

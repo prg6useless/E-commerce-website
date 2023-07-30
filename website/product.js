@@ -14,7 +14,7 @@ for (let i = 0; i < productdata.name.length; i++) {
         <i class="${productdata.class1[i]}"></i>
         <i class="${productdata.class2[i]}"></i>
     </div>
-    <p>${productdata.price[i]}</p>
+    <p>$${productdata.price[i]}</p>
 </div>`;
 }
 

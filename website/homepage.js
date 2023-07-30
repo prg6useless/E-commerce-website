@@ -21,7 +21,7 @@ for (let i = 0; i < data[0].name.length; i++) {
         <i class="fa fa-star-o"></i>
         <i class="fa fa-star-o"></i>
       </div>
-    <p>${data[0].price[i]}</p>
+    <p>$${data[0].price[i]}</p>
   </div>
 </div>`;
 }
@@ -43,7 +43,7 @@ for (let i = 0; i < data[1].name.length; i++) {
         <i class="${data[1].class[i]}"></i>
         <i class="fa fa-star-o"></i>
       </div>
-      <p>${data[1].price[i]}</p>
+      <p>$${data[1].price[i]}</p>
     </div>
   </div>`;
 }

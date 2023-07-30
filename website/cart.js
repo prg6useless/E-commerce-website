@@ -1,101 +1,116 @@
-import cartdata from "../data/cart.json" assert { type: "json" };
-
-// console.log(cartdata);
-
-//add data to json
-// let obj = JSON.stringify(cartdata);
-// cartdata.name[2] = "saral";
-// cartdata.img[2] = "../images/cutegirl.png";
-// cartdata.price[2] = "$450";
+let cartItems = localStorage.getItem("cartdata");
+cartItems = JSON.parse(cartItems);
 
 let tablerowitem = document.getElementsByClassName("cart-table");
-let totaltable = document.getElementsByClassName("total-table");
+let grandTotal = document.getElementById("grandTotalTable");
 let htmlElements = "";
-let htmlElements2 = "";
 
-for (let i = 0; i < cartdata[0].name.length; i++) {
-  htmlElements += `<tr>
+for (let i = 0; i < cartItems.length; i++) {
+  htmlElements += `<tr id="${cartItems[i].productid}">
   <td>
-    <div class="cart-info">
-        <img src=${cartdata[0].img[i]} alt="logo">
+    <div class="cart-info" >
+        <img src=${cartItems[i].productimg} alt="logo">
         <div>
-            <p>${cartdata[0].name[i]}</p>
-            <small>$${cartdata[0].price[i]}</small><br>
-            <a href="">${cartdata[0].link}</a>
+            <p>${cartItems[i].productname}</p>
+            <p>${cartItems[i].productid}</p>
+            <small>${cartItems[i].productprice}</small><br>
+            <a href="">Remove</a>
         </div>
     </div>
     </td>
     <td>
-    <input type="number" class="order-value" value="1" min="1">
-    <button class="btn-click">Ok</button>
+    <input type="number" class="order-value" value="${cartItems[i].productamt}" min="1">
+    <button class="btn-click setAmt_btn" >Ok</button>
     </td>
-    <td class="q-value">1</td>
-    <td class="sub-total">$${cartdata[0].price[i]}</td></tr>
+    <td class="q-value">${cartItems[i].productamt}</td>
+    <td class="q-value">$${cartItems[i].productprice}</td>
+    <td class="sub-total">$${cartItems[i].producttotal}</td></tr>
 `;
 }
 
 tablerowitem[0].innerHTML = htmlElements;
-let subtotal = 0;
 
-for (let k = 0; k < cartdata[0].name.length; k++) {
-  subtotal += parseFloat(cartdata[0].price[k]);
+let orderQuantity = document.getElementsByClassName("setAmt_btn");
+let parentElement = [];
+let cartqty = [];
+let cartsubtotal = [];
+let productid = [];
+
+for (let i = 0; i < orderQuantity.length; i++) {
+  parentElement[i] = orderQuantity[i].parentElement.parentElement;
+  productid[i] = parentElement[i].id;
+  cartqty[i] = parentElement[i].children[2];
+  cartsubtotal[i] = parentElement[i].children[4];
 }
 
-let btnclk = document.getElementsByClassName("btn-click");
-let qValue = document.getElementsByClassName("q-value");
+let Total = 0;
+for (let i = 0; i < cartItems.length; i++) {
+  Total += cartItems[i].producttotal;
+}
+let VAT = 0.13 * Total;
+let deliveryCharge = 0.02 * Total;
+let GrandTotal = Total + VAT;
 
-let num = document.querySelectorAll(".order-value");
+grandTotal.innerHTML = `<tr>
+<td></td>
+<td>Total</td>
+<td id="order_Total">$${Total}</td>
+</tr>
+<tr>
+<td></td>
+<td>Delivery Charge 2%</td>
+<td id="del-charge">$${deliveryCharge.toFixed(2)}</td>
+</tr>
+<tr>
+<td></td>
+<td>VAT 13%</td>
+<td id="vat">$${VAT.toFixed(2)}</td>
+</tr>
+<tr>
+<td></td>
+<td>Grand Total</td>
+<td id="g-total">$${GrandTotal.toFixed(2)}</td>
+</tr>
+`;
 
-let val;
+let orderTotal = document.getElementById("order_Total");
+let delCharge = document.getElementById("del-charge");
+let vat = document.getElementById("vat");
+let gtotal = document.getElementById("g-total");
 
-for (let k = 0; k < cartdata[0].name.length; k++) {
-  val = parseFloat(num[k].value);
-  num[k].addEventListener("input", function () {
-    val = parseFloat(num[k].value);
+for (let i = 0; i < orderQuantity.length; i++) {
+  orderQuantity[i].addEventListener("click", () => {
+    let value = parentElement[i].children[1].children[0].value;
+
+    //update the cartdata
+
+    for (let j = 0; j < cartItems.length; j++) {
+      if (cartItems[j].productid == productid[i]) {
+        cartItems[j].productamt = value;
+        cartItems[j].producttotal = value * cartItems[j].productprice;
+      }
+      localStorage.setItem("cartdata", JSON.stringify(cartItems));
+    }
+
+    //get the updated cartdata
+    cartItems = localStorage.getItem("cartdata");
+    cartItems = JSON.parse(cartItems);
+    Total = 0;
+    deliveryCharge = 0;
+    VAT = 0;
+    GrandTotal = 0;
+    for (let i = 0; i < cartItems.length; i++) {
+      Total += cartItems[i].producttotal;
+      deliveryCharge = 0.02 * Total;
+      VAT = 0.13 * Total;
+      GrandTotal = Total + VAT;
+      delCharge.innerHTML = `$${deliveryCharge.toFixed(2)}`;
+      orderTotal.innerHTML = `$${Total}`;
+      vat.innerHTML = `$${VAT.toFixed(2)}`;
+      gtotal.innerHTML = `$${GrandTotal.toFixed(2)}`;
+    }
+
+    cartqty[i].innerHTML = value;
+    cartsubtotal[i].innerHTML = `$${value * cartItems[i].productprice}`;
   });
 }
-//disabled button until value is changed
-btnclk.disabled = true;
-
-function stateHandle() {
-  if (parseFloat(num[0].value) == "val") {
-    btnclk.disabled = true; //button remains disabled
-  } else {
-    btnclk.disabled = false; //button is enabled
-  }
-}
-
-let subtotalValue = document.getElementsByClassName("sub-total");
-
-let totalValue = document.getElementsByClassName("price");
-
-for (let i = 0; i < cartdata[1].title.length; i++) {
-  htmlElements2 += `<tr>
-  <td>${cartdata[1].title[i]}</td>
-  <td class="price">$${subtotal}</td>
-</tr>
-  `;
-}
-totaltable[0].innerHTML = htmlElements2;
-
-totalValue[0].innerHTML = "$" + subtotal;
-totalValue[1].innerHTML = "$" + (0.02 * subtotal).toFixed(2);
-totalValue[2].innerHTML = "$" + (subtotal + 0.02 * subtotal).toFixed(2);
-
-let tot = 0;
-for (let j = 0; j < cartdata[0].name.length; j++) {
-  btnclk[j].onclick = () => {
-    qValue[j].innerHTML = val;
-    //to calcutate total
-
-    tot = tot + parseFloat(cartdata[0].price[j]).toFixed(2) * (val - 1);
-
-    subtotalValue[j].innerHTML =
-      "$" + parseFloat(cartdata[0].price[j]).toFixed(2) * val;
-    totalValue[0].innerHTML = "$" + (subtotal + tot).toFixed(2);
-    totalValue[1].innerHTML = "$" + (0.02 * (subtotal + tot)).toFixed(2);
-    totalValue[2].innerHTML =
-      "$" + (subtotal + tot + 0.02 * (subtotal + tot)).toFixed(2);
-  };
-}
-//   totalValue[0].innerHTML = parseFloat(cartdata[0].price[i]) * val;
