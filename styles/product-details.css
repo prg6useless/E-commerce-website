@@ -1,0 +1,107 @@
+/*for product details*/
+
+.single-product {
+  margin-top: 80px;
+}
+
+.single-product .col-2 img {
+  padding: 0;
+  object-fit: contain;
+}
+
+.product-img {
+  height: 450px;
+}
+
+.single-product .col-2 {
+  padding: 20px;
+}
+
+.single-product h4 {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.single-product select {
+  display: block;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+.single-product input {
+  width: 50px;
+  height: 40px;
+  padding: 10px;
+  font-size: 20px;
+  margin-right: 10px;
+  border: 1px solid purple;
+}
+
+.single-product input:focus {
+  outline: none;
+}
+
+.single-product .fa {
+  margin-left: 10px;
+}
+
+.small-img-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-img-col {
+  flex-basis: 25%;
+  cursor: pointer;
+}
+
+.rel-pro {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 50px;
+}
+
+.rel-pro-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.rel-pro-row h2 {
+  margin-right: 100px;
+}
+
+.single-product .select-opt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addtocart-btn {
+  display: inline-block;
+  background-color: rgb(55, 52, 52);
+  color: white;
+  padding: 10px 25px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background-color 0.5s;
+}
+
+.addtocart-btn:hover {
+  background-color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .rel-pro-row h2 {
+    margin-right: 100px;
+  }
+  .product-details-div {
+    margin-top: 180px;
+  }
+}

@@ -1,5 +1,6 @@
 let MenuItems = document.getElementById("MenuItems");
 let Tag = document.getElementById("Tag");
+let productsContainer = document.getElementById("products-container");
 
 MenuItems.style.maxHeight = "0px";
 function menutoggle() {
@@ -10,5 +11,6 @@ function menutoggle() {
   } else {
     MenuItems.style.maxHeight = "0px";
     Tag.style.marginTop = "70px";
+
   }
 }

@@ -69,7 +69,7 @@ for (let i = 0; i < data[2].name.length; i++) {
 </div>`;
 }
 
-row[5].innerHTML = htmlElements3;
+row[4].innerHTML = htmlElements3;
 
 for (let i = 0; i < data[3].img.length; i++) {
   htmlElements4 += `<div class="col-5">
@@ -77,4 +77,4 @@ for (let i = 0; i < data[3].img.length; i++) {
 </div>`;
 }
 
-row[6].innerHTML = htmlElements4;
+row[5].innerHTML = htmlElements4;
