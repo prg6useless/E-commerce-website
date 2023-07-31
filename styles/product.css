@@ -23,7 +23,7 @@ select:focus{
 
 .page-btn span{
     display: inline-block;
-    border: 1px solid purple;
+    border: 1px solid rgb(18, 98, 216);
     margin-left: 10px;
     width:40px;
     height:40px;
@@ -33,97 +33,10 @@ select:focus{
 }
 
 .page-btn span:hover{
-    background-color: purple;
+    background-color: rgb(18, 98, 216);
     color:white;
 }
 
-/*for cart details*/
-
-.cart-page{
-    margin: 80px auto;
-    padding:100px;
-}
-
-.cart-header{
-    width: 100%;
-    border-collapse: collapse;
-    padding:20px;
-}
-
-.cart-table{
-    width: 100%;
-}
-
-.cart-info{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.cart-header th{
-    text-align: left;
-    padding:5px;
-    color:purple;
-    background-color: rgb(162, 162, 155);
-    font-weight: normal;
-}
-
-.cart-header td{
-    padding:10px 5px;
-}
-
-td input{
-    width:40px;
-    height: 30px;
-    padding:5px;
-}
-
-.btn-click{
-    display:inline-block;
-    background-color:rgb(55, 52, 52);
-    color:white;
-    padding:8px 15px;
-    margin: 30px 0;
-    border-radius: 30px;
-    transition: background-color 0.5s ;
-    cursor: pointer;
-}
-
-.btn-click:hover{
-    background-color:rgb(0, 0, 0);
-}
-
-.cart-table td a{
-    color:purple;
-}
-
-.cart-table td img{
-    width:80px;
-    height:80px;
-    margin-right: 10px;
-}
-
-.total-price{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.total-price table{
-    border-top: 3px solid purple;
-    width:100%;
-    max-width:420px;
-}
-
-td:first-child,th:first-child{
-    width: 300px;
-}
-
-td:nth-child(2),th:nth-child(2),td:nth-child(3),th:nth-child(3),td:nth-child(4),th:nth-child(4){
-    width:320px;
-}
-
-.price{
-    text-align: right;
-}
 
 @media screen and (max-width:1050px) {
     .opendetails img{

@@ -171,7 +171,7 @@ h4 {
 }
 
 .rating .fa {
-  color: blueviolet;
+  color: rgb(18, 98, 216);
 }
 
 /*offer*/
@@ -228,7 +228,7 @@ small {
 
 .fa.fa-quote-left {
   font-size: 34px;
-  color: blueviolet;
+  color: rgb(18, 98, 216);
 }
 
 .col-3 p {

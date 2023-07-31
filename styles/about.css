@@ -1,11 +1,6 @@
-#container{
-    margin:150px;
-    padding:20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
+/* .main-container{
+    min-height: 427px;
+} */
 
 .col-4{
     flex-basis: 25% !important;

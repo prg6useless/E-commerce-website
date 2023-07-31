@@ -76,6 +76,16 @@ cartdata = JSON.parse(cartdata);
 
 addtocart.addEventListener("click", () => {
   let cartItems = {};
+
+  //check if the product is already present in cartdata
+
+  for (let i = 0; i < cartdata.length; i++) {
+    if (cartdata[i].productid == productid) {
+      alert("Product already added to cart. Please change the amount in your carts page.");
+      return;
+    }
+  }
+
   cartItems.productid = productid;
   cartItems.productname = productdata.name[productid - 1];
   cartItems.productprice = productdata.price[productid - 1];
@@ -87,5 +97,5 @@ addtocart.addEventListener("click", () => {
 
   //add cartdata to localstorage
   localStorage.setItem("cartdata", JSON.stringify(cartdata));
-  console.log(cartdata);
+  alert("Product added to cart");
 });

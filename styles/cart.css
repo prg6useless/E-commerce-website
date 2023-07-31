@@ -1,0 +1,142 @@
+/* for cart details */
+
+.cart-page {
+  margin: 10rem 0;
+  min-height: 605px;
+}
+
+.cart-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  width: 15rem;
+}
+
+.cart_header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cart_title {
+  margin: 20px;
+  width: 20rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.cart-table {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+/* tbody {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+} */
+
+.cart-table tbody .product-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50rem;
+}
+
+.product-row {
+  border-bottom: 1px solid #ddd;
+}
+
+td input {
+  width: 50px;
+  height: 30px;
+  padding: 5px;
+}
+
+.btn-click {
+  display: inline-block;
+  background-color: rgb(55, 52, 52);
+  color: white;
+  padding: 8px 15px;
+  margin: 30px 0;
+  border-radius: 30px;
+  transition: background-color 0.5s;
+  cursor: pointer;
+}
+
+.btn-click:hover {
+  background-color: rgb(0, 0, 0);
+}
+/* 
+.cart-table td a {
+  color: purple;
+} */
+
+.pro-img {
+  width: 80px;
+  height: 80px;
+  margin: 0 30px;
+}
+
+.total-price {
+  display: flex;
+  justify-content: center;
+}
+
+.total-price table {
+  border-top: 3px solid rgb(18, 98, 216);
+  width: 100%;
+  max-width: 420px;
+}
+
+.remove_cart_btn {
+  background-color: rgb(179, 18, 18);
+  padding: 10px;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.remove_cart_btn:hover {
+  background-color: rgb(225, 7, 7);
+}
+
+.checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+#checkout-btn {
+  background-color: rgb(18, 98, 216);
+  padding: 10px;
+  color: white;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#checkout-btn:hover {
+  background-color: rgb(7, 57, 172);
+}
+
+.payment-card {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 850px) {
+  .cart-info,
+  .total-price table {
+    display: flex;
+    flex-direction: column;
+  }
+}
