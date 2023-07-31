@@ -61,3 +61,7 @@ ul {
 .copyright{
     text-align: center;
 }
+
+.download_app{
+    cursor: pointer;
+}

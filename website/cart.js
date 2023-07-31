@@ -119,6 +119,14 @@ for (let i = 0; i < orderQuantity.length; i++) {
 let removeCartBtn = document.getElementsByClassName("remove_cart_btn");
 let cartTitle = document.getElementById("cart_title");
 
+if (cartItems.length == 0) {
+  cartTitle.innerHTML = "Your Cart is Empty";
+}
+
+else {
+  cartTitle.innerHTML = "Your Cart";
+}
+
 for (let i = 0; i < removeCartBtn.length; i++) {
   removeCartBtn[i].addEventListener("click", () => {
     let value = parentElement[i].children[1].children[0].value;
@@ -188,6 +196,7 @@ checkoutBtn.addEventListener("click", () => {
     alert("Your Cart is Empty");
   }
   else {
-    window.location.href = "homepage.html";
+    alert("Please Login to Continue")
+    window.location.href = "login.html";
   }
 });
