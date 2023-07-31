@@ -196,7 +196,7 @@ checkoutBtn.addEventListener("click", () => {
     alert("Your Cart is Empty");
   }
   else {
-    alert("Please Login to Continue")
+    alert("Please Login or Sign Up to Checkout")
     window.location.href = "login.html";
   }
 });
