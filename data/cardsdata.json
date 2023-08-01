@@ -13,7 +13,9 @@
       "../images/Gumby-art_Tshirt.png",
       "../images/Green_Overcoat.png"
     ],
-    "price": ["75.00", "65.00", "30.50", "60.50"]
+    "price": ["75.00", "65.00", "30.50", "60.50"],
+    "class1": ["fa fa-star", "fa fa-star", "fa fa-star", "fa fa-star"],
+    "class2": ["fa fa-star", "fa fa-star-half", "fa fa-star", "fa fa-star-half"]
   },
   {
     "_comment": "Latest Arrivals",
@@ -47,15 +49,25 @@
       "40.00",
       "35.00"
     ],
-    "class": [
-      "fa fa-star-half-o",
+    "class1": [
       "fa fa-star-o",
-      "fa fa-star-half-o",
-      "fa fa-star-half-o",
+      "fa fa-star-o",
+      "fa fa-star",
+      "fa fa-star",
       "fa fa-star-half-o",
       "fa fa-star",
       "fa fa-star-half-o",
-      "fa fa-star"
+      "fa fa-star-half-o"
+    ],
+    "class2": [
+      "fa fa-star-o",
+      "fa fa-star-o",
+      "fa fa-star",
+      "fa fa-star-o",
+      "fa fa-star-o",
+      "fa fa-star",
+      "fa fa-star-o",
+      "fa fa-star-o"
     ]
   },
   {

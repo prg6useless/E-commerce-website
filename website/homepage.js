@@ -18,9 +18,9 @@ for (let i = 0; i < data[0].name.length; i++) {
       <div class="rating"> 
         <i class="fa fa-star"></i>
         <i class="fa fa-star"></i>
-        <i class="fa fa-star-half-o"></i>
-        <i class="fa fa-star-o"></i>
-        <i class="fa fa-star-o"></i>
+        <i class="fa fa-star"></i>
+        <i class="${data[0].class1[i]}"></i>
+        <i class="${data[0].class2[i]}"></i>
       </div>
     <p>$${data[0].price[i]}</p>
   </div>
@@ -41,8 +41,8 @@ for (let i = 0; i < data[1].name.length; i++) {
         <i class="fa fa-star"></i>
         <i class="fa fa-star"></i>
         <i class="fa fa-star"></i>
-        <i class="${data[1].class[i]}"></i>
-        <i class="fa fa-star-o"></i>
+        <i class="${data[1].class1[i]}"></i>
+        <i class="${data[1].class2[i]}"></i>
       </div>
       <p>$${data[1].price[i]}</p>
     </div>

@@ -51,22 +51,38 @@ page_toggle_btn.innerHTML = `
 <span class="page_selector">4</span>
 `;
 
-page_toggle_btn.innerHTML += `<span>&#8594</span> <p id="page_number">Page 1 of 4</p>`;
+page_toggle_btn.innerHTML += `<span id="arrow_right">&#8594</span> <span id="arrow_left">&#8592</span><p id="page_number">Page 1 of 4</p>`;
 
 let page_selector = document.getElementsByClassName("page_selector");
 let page_number = document.getElementById("page_number");
 
-page_selector[0].addEventListener("click", () => {
+let arrow_left = document.getElementById("arrow_left");
+let arrow_right = document.getElementById("arrow_right");
+
+arrow_left.style.display = "none";
+
+arrow_right.addEventListener("click", togglepagetwo);
+arrow_left.addEventListener("click", togglepageone);
+
+page_selector[0].addEventListener("click", togglepageone);
+
+function togglepageone() {
   rowitem[2].classList.add("row_not-active");
   rowitem[1].classList.remove("row_not-active");
   page_number.innerHTML = `Page ${1} of 4`;
-});
+  arrow_left.style.display = "none";
+  arrow_right.style.display = "block";
+}
 
-page_selector[1].addEventListener("click", () => {
+page_selector[1].addEventListener("click", togglepagetwo);
+
+function togglepagetwo() {
   rowitem[1].classList.add("row_not-active");
   rowitem[2].classList.remove("row_not-active");
   page_number.innerHTML = `Page ${2} of 4`;
-});
+  arrow_left.style.display = "block";
+  arrow_right.style.display = "none";
+}
 
 let opendetails = document.getElementsByClassName("opendetails");
 
