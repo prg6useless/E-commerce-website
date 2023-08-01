@@ -5,6 +5,7 @@ let htmlElements1 = "";
 let htmlElements2 = "";
 let htmlElements3 = "";
 let htmlElements4 = "";
+let htmlElements5 = "";
 
 //popular products
 
@@ -14,7 +15,7 @@ for (let i = 0; i < data[0].name.length; i++) {
     <img src=${data[0].img[i]} alt="img1" class="pop-pro_img">
     <div class="ProductsDiv">
       <h4>${data[0].name[i]}</h4>
-      <div class="rating">
+      <div class="rating"> 
         <i class="fa fa-star"></i>
         <i class="fa fa-star"></i>
         <i class="fa fa-star-half-o"></i>
@@ -78,3 +79,11 @@ for (let i = 0; i < data[3].img.length; i++) {
 }
 
 row[5].innerHTML = htmlElements4;
+
+for (let i = 0; i < data[4].name.length; i++) {
+  htmlElements5 += ` <div class="col-3"><img src="${data[4].img[i]}" alt="img1"></div>
+
+`;
+}
+
+row[1].innerHTML = htmlElements5;

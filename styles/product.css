@@ -17,8 +17,16 @@ select:focus{
     cursor: pointer;
 }
 
+.row_not-active{
+    display:none;
+}
+
 .page-btn{
-    margin:0 auto 80px;
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .page-btn span{
@@ -35,6 +43,12 @@ select:focus{
 .page-btn span:hover{
     background-color: rgb(18, 98, 216);
     color:white;
+}
+
+
+#page_number{
+    display: inline-block;
+    margin-left: 10px;
 }
 
 

@@ -5,7 +5,6 @@ let tablerowitem = document.getElementsByClassName("cart-table");
 let grandTotal = document.getElementById("grandTotalTable");
 let htmlElements = "";
 
-
 for (let i = 0; i < cartItems.length; i++) {
   htmlElements += `
   
@@ -121,15 +120,14 @@ let cartTitle = document.getElementById("cart_title");
 
 if (cartItems.length == 0) {
   cartTitle.innerHTML = "Your Cart is Empty";
-}
-
-else {
+} else {
   cartTitle.innerHTML = "Your Cart";
 }
 
 for (let i = 0; i < removeCartBtn.length; i++) {
   removeCartBtn[i].addEventListener("click", () => {
     let value = parentElement[i].children[1].children[0].value;
+
 
     //remove the item from cartdata
     if (cartItems[i].productid == productid[i]) {
@@ -177,9 +175,7 @@ for (let i = 0; i < removeCartBtn.length; i++) {
       <tr>
       <td></td>
       <td style="font-weight :bold">Grand Total</td>
-      <td id="g-total" style="font-weight :bold">$${GrandTotal.toFixed(
-        2
-      )}</td>
+      <td id="g-total" style="font-weight :bold">$${GrandTotal.toFixed(2)}</td>
       </tr>
       `;
 
@@ -188,15 +184,13 @@ for (let i = 0; i < removeCartBtn.length; i++) {
   });
 }
 
-
 let checkoutBtn = document.getElementById("checkout-btn");
 
 checkoutBtn.addEventListener("click", () => {
   if (cartItems.length == 0) {
     alert("Your Cart is Empty");
-  }
-  else {
-    alert("Please Login or Sign Up to Checkout")
+  } else {
+    alert("Please Login or Sign Up to Checkout");
     window.location.href = "login.html";
   }
 });

@@ -55,7 +55,7 @@
 .small-img-col {
   flex-basis: 25%;
   cursor: pointer;
-}
+} 
 
 .rel-pro {
   display: flex;
@@ -74,6 +74,10 @@
 
 .rel-pro-row h2 {
   margin-right: 100px;
+}
+
+.rel_pro_details{
+  cursor: pointer;
 }
 
 .single-product .select-opt {
