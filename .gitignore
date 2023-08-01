@@ -1,6 +1,6 @@
 #txt file ignore
 thingstoadd.txt
 
-login.html
-login.css
-login.js
+/website/login.html
+/styles/login.css
+/website/login.js
