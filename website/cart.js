@@ -49,7 +49,7 @@ for (let i = 0; i < cartItems.length; i++) {
 }
 let VAT = 0.13 * Total;
 let deliveryCharge = 0.02 * Total;
-let GrandTotal = Total + VAT;
+let GrandTotal = Total + VAT + deliveryCharge;
 
 grandTotal.innerHTML = `<tr>
 <td></td>
@@ -104,6 +104,7 @@ for (let i = 0; i < orderQuantity.length; i++) {
       deliveryCharge = 0.02 * Total;
       VAT = 0.13 * Total;
       GrandTotal = Total + VAT + deliveryCharge;
+      console.log(GrandTotal);
       delCharge.innerHTML = `$${deliveryCharge.toFixed(2)}`;
       orderTotal.innerHTML = `$${Total}`;
       vat.innerHTML = `$${VAT.toFixed(2)}`;
@@ -127,7 +128,6 @@ if (cartItems.length == 0) {
 for (let i = 0; i < removeCartBtn.length; i++) {
   removeCartBtn[i].addEventListener("click", () => {
     let value = parentElement[i].children[1].children[0].value;
-
 
     //remove the item from cartdata
     if (cartItems[i].productid == productid[i]) {

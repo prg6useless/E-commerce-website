@@ -99,6 +99,7 @@ addtocart.addEventListener("click", () => {
 
   cartdata.push(cartItems);
 
+
   //add cartdata to localstorage
   localStorage.setItem("cartdata", JSON.stringify(cartdata));
   alert("Product added to cart");
